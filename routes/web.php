@@ -28,7 +28,8 @@ Route::get('/products.search', 'App\Http\Controllers\ProductController@search');
 
 Route::resource('recipes', 'App\Http\Controllers\RecipeController');
 
+
+Route::resource('CreateQuestion', 'App\Http\Controllers\QuestionController');
 Route::get('questions', function () {
     return view('Questions.first');
 });
-Route::resource('CreateQuestion', 'App\Http\Controllers\QuestionController');
